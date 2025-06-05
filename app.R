@@ -19,10 +19,13 @@ ui <- fluidPage(
                                  tabPanel("Study Design",
                                           br(),
                                           h5("Calculate from study parameters"),
-                                          p("Enter your study design - the app will calculate expected sample sizes and margins of error."),
+                                          p("Enter your study design - the app will calculate expected sample sizes and margins of error. The app
+                                            uses information about the total number of participants you think you might try to recruit (approach), how many
+                                            you expect to enroll, their adherence in treatment, and attrition rates to estimate the expected sample sizes
+                                            for your study. You can skip any of these steps by setting values to 100% (0% for attrition)"),
 
                                           numericInput("n_approached",
-                                                       "Total participants approached:",
+                                                       "Expected participants approached:",
                                                        value = 60,
                                                        min = 1,
                                                        step = 1),
