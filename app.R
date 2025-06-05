@@ -200,7 +200,7 @@ server <- function(input, output) {
         if (is.na(me_val)) {
             "Enrollment ME: Invalid sample size"
         } else {
-            paste("Enrollment rate ME: ±", round(me_val, 1), "%")
+            paste("Enrollment rate ME:  +/-", round(me_val, 1), "%")
         }
     })
 
@@ -209,7 +209,7 @@ server <- function(input, output) {
         if (is.na(me_val)) {
             "Completion ME: Invalid sample size"
         } else {
-            paste("Completion rate ME: ±", round(me_val, 1), "%")
+            paste("Completion rate ME:  +/-", round(me_val, 1), "%")
         }
     })
 
@@ -218,7 +218,7 @@ server <- function(input, output) {
         if (is.na(me_val)) {
             "Approached ME: Invalid sample size"
         } else {
-            paste("Enrollment (total approached) ME: ±", round(me_val, 1), "%")
+            paste("Enrollment (total approached) ME:  +/-", round(me_val, 1), "%")
         }
     })
 
